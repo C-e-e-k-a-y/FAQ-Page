@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 400px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Work Sans' sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background: url('images/background-pattern-desktop.svg') no-repeat;
+    background-color: hsl(275, 100%, 97%);
+    background-position: top;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+h4:hover{
+    cursor: pointer;
+    color: #AD28EB;
+}
+
+.content {
+    width: 43%;
+    margin: auto;
+    padding: 2em;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family:'Work Sans', sans-serif;
+    font-size: 20px;
+    position: relative;
+}
+
+.heading {
+    display: inherit;
+    align-items: center;
+    gap: 20px;
+    font-size: x-large;
+    font-weight: 700;
+    height: 5rem;
+    color: hsl(292, 42%, 14%);
+}
+
+.sub-head {
+    display: inherit;
+    align-items: center;
+    font-size: 16px;
+    width: 90%;
+    color: hsl(292, 42%, 14%);
+}
+
+button {
+    display: inherit;
+    position: absolute;
+    right: 20px;
+    border: none;
+    background: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.details {
+    border-bottom: 1px solid hsla(292, 16%, 49%, 0.3);
+    font-size: 16px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(292, 16%, 49%);
+    display: none;
+}
+
+.attribution {
+    display: flex;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution pre {
+    font-family:'Work Sans', sans-serif;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: 150%;
+    }
+
+    .content {
+        width: 70%;
+        padding: 2em;
+        font-size: 16px;
+    }
+  }
+
+  @media (max-width: 426px) {
+
+    body {
+        min-height: 100vh;
+        min-width: 320px;
+        font-size: 12px;
+    }
+
+    .heading {
+        font-size: 12px;
+        height: 2rem;
+    }
+
+    .content {
+        width: 90%;
+        padding: 2em;
+    }
+
+    .sub-head {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .details {
+        font-size: 12px;
+    }
+  }
